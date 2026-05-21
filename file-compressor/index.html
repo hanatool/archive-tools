@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online file compressor tool to reduce image, PDF, and document sizes quickly and easily.">
+    <meta name="keywords" content="file compressor, compress files, compress images, compress pdf, online tools">
+    <meta name="author" content="File Compressor">
+    <meta name="robots" content="index, follow">
+
+    <title>File Compressor - Free Online Tool</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- HEADER -->
+    <header class="border-bottom bg-white sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="fa-solid fa-file-zipper text-primary me-2"></i>
+                    File Compressor
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tools</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-6">
+                    <span class="badge bg-primary-subtle text-primary mb-3">
+                        Fast & Secure Compression
+                    </span>
+
+                    <h1 class="display-5 fw-bold mb-3">
+                        Compress Your Files Online
+                    </h1>
+
+                    <p class="lead text-secondary mb-4">
+                        Reduce file sizes quickly with our modern online file compressor.
+                        Compress images, PDFs, documents, and more directly in your browser.
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-primary btn-lg px-4">
+                            <i class="fa-solid fa-upload me-2"></i>
+                            Upload File
+                        </button>
+
+                        <button class="btn btn-outline-secondary btn-lg px-4">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+
+                            <div class="text-center mb-4">
+                                <i class="fa-solid fa-cloud-arrow-up fa-4x text-primary mb-3"></i>
+
+                                <h4 class="fw-bold">
+                                    Drag & Drop Files
+                                </h4>
+
+                                <p class="text-secondary">
+                                    Upload files and compress them instantly.
+                                </p>
+                            </div>
+
+                            <form id="compressForm">
+                                <div class="mb-3">
+                                    <input 
+                                        type="file" 
+                                        class="form-control form-control-lg" 
+                                        id="fileInput"
+                                    >
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-semibold">
+                                        Compression Level
+                                    </label>
+
+                                    <select class="form-select form-select-lg" id="compressionLevel">
+                                        <option value="low">Low Compression</option>
+                                        <option value="medium" selected>Medium Compression</option>
+                                        <option value="high">High Compression</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="fa-solid fa-compress me-2"></i>
+                                    Compress Now
+                                </button>
+                            </form>
+
+                            <div id="resultBox" class="alert alert-success mt-4 d-none">
+                                File compressed successfully.
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ADS SECTION -->
+    <section class="py-4">
+        <div class="container">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center py-5">
+                    <p class="text-uppercase small text-secondary mb-2">
+                        Advertisement
+                    </p>
+
+                    <h5 class="fw-bold">
+                        Your Ad Banner Here
+                    </h5>
+
+                    <p class="text-secondary mb-0">
+                        970 x 250 Responsive Ad Space
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Why Choose Our Tool?
+                </h2>
+
+                <p class="text-secondary">
+                    Modern, lightweight, and easy-to-use online compression tool.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 text-center">
+                            <i class="fa-solid fa-bolt fa-2x text-primary mb-3"></i>
+
+                            <h5 class="fw-bold">
+                                Fast Processing
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+                                Compress files within seconds using optimized technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 text-center">
+                            <i class="fa-solid fa-shield-halved fa-2x text-primary mb-3"></i>
+
+                            <h5 class="fw-bold">
+                                Secure Uploads
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+                                Your files remain private and secure during compression.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4 text-center">
+                            <i class="fa-solid fa-mobile-screen fa-2x text-primary mb-3"></i>
+
+                            <h5 class="fw-bold">
+                                Mobile Friendly
+                            </h5>
+
+                            <p class="text-secondary mb-0">
+                                Fully responsive design that works on all devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section class="py-5 bg-white border-top border-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+
+                    <h2 class="fw-bold mb-4">
+                        Free Online File Compressor
+                    </h2>
+
+                    <p class="text-secondary fs-5">
+                        Our online file compressor helps you reduce file sizes without
+                        losing quality. Compress images, PDFs, ZIP files, and documents
+                        quickly using a modern and user-friendly interface designed for
+                        speed and simplicity.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white py-4">
+        <div class="container">
+
+            <div class="row align-items-center g-3">
+
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-1">
+                        <i class="fa-solid fa-file-zipper text-primary me-2"></i>
+                        File Compressor
+                    </h5>
+
+                    <p class="text-secondary mb-0">
+                        Free modern tool for online file compression.
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Privacy
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Terms
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary">
+                        Contact
+                    </a>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center text-secondary small">
+                © 2026 File Compressor. All rights reserved.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        const compressForm = document.getElementById('compressForm');
+        const resultBox = document.getElementById('resultBox');
+
+        compressForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const fileInput = document.getElementById('fileInput');
+
+            if(fileInput.files.length === 0) {
+                alert('Please select a file first.');
+                return;
+            }
+
+            resultBox.classList.remove('d-none');
+
+            setTimeout(() => {
+                resultBox.innerHTML = `
+                    <i class="fa-solid fa-circle-check me-2"></i>
+                    Compression completed successfully.
+                `;
+            }, 500);
+        });
+    </script>
+
+</body>
+</html>

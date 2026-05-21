@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>RAR Extractor - Free Online Archive Extract Tool</title>
+
+    <meta name="description" content="RAR Extractor is a free online tool to open, extract, and manage RAR archives quickly and securely with a modern responsive interface.">
+    <meta name="keywords" content="RAR Extractor, extract rar online, rar opener, unzip rar file, archive extractor, file tools">
+    <meta name="author" content="RAR Extractor">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="RAR Extractor - Free Online Archive Extract Tool">
+    <meta property="og:description" content="Open and extract RAR archives online with a modern and responsive interface.">
+    <meta property="og:type" content="website">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="bg-light text-dark">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fa-solid fa-file-zipper text-primary me-2"></i>
+                RAR Extractor
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <div class="bg-white border rounded-4 p-5 shadow-sm">
+                        <div class="mb-4">
+                            <i class="fa-solid fa-box-open fa-4x text-primary"></i>
+                        </div>
+
+                        <h1 class="fw-bold mb-3">
+                            Free Online RAR Extractor
+                        </h1>
+
+                        <p class="text-secondary mb-4">
+                            Easily open and extract RAR archives directly from your browser.
+                            Fast, secure, responsive, and completely free to use on desktop and mobile devices.
+                        </p>
+
+                        <!-- Upload Box -->
+                        <div class="border rounded-4 p-5 bg-light">
+                            <i class="fa-solid fa-cloud-arrow-up fa-3x text-primary mb-3"></i>
+
+                            <h5 class="fw-semibold mb-3">
+                                Upload Your RAR File
+                            </h5>
+
+                            <input 
+                                type="file" 
+                                class="form-control mb-3" 
+                                id="rarFile"
+                                accept=".rar"
+                            >
+
+                            <button class="btn btn-primary px-4" id="extractBtn">
+                                <i class="fa-solid fa-folder-open me-2"></i>
+                                Extract Archive
+                            </button>
+
+                            <div id="statusBox" class="mt-4 d-none">
+                                <div class="alert alert-success mb-0">
+                                    <i class="fa-solid fa-circle-check me-2"></i>
+                                    File uploaded successfully.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVERTISEMENT -->
+    <section class="pb-4">
+        <div class="container">
+            <div class="bg-white border rounded-4 p-4 text-center shadow-sm">
+                <small class="text-uppercase text-secondary d-block mb-2">
+                    Advertisement
+                </small>
+
+                <div class="py-5">
+                    <i class="fa-solid fa-rectangle-ad fa-3x text-secondary mb-3"></i>
+                    <h5 class="fw-semibold">Your Ad Space Here</h5>
+                    <p class="text-secondary mb-0">
+                        Responsive banner advertisement area for Google Ads or sponsors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-5" id="features">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Features</h2>
+                <p class="text-secondary">
+                    Everything you need for extracting RAR archives online.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="bg-white border rounded-4 p-4 h-100 shadow-sm">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-bolt fa-2x text-primary"></i>
+                        </div>
+
+                        <h5 class="fw-semibold">Fast Processing</h5>
+
+                        <p class="text-secondary mb-0">
+                            Extract compressed files quickly with optimized browser performance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white border rounded-4 p-4 h-100 shadow-sm">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-shield-halved fa-2x text-primary"></i>
+                        </div>
+
+                        <h5 class="fw-semibold">Secure & Private</h5>
+
+                        <p class="text-secondary mb-0">
+                            Your uploaded archives remain secure and are processed safely.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="bg-white border rounded-4 p-4 h-100 shadow-sm">
+                        <div class="mb-3">
+                            <i class="fa-solid fa-mobile-screen fa-2x text-primary"></i>
+                        </div>
+
+                        <h5 class="fw-semibold">Mobile Friendly</h5>
+
+                        <p class="text-secondary mb-0">
+                            Fully responsive design that works perfectly on all screen sizes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="pb-5" id="about">
+        <div class="container">
+            <div class="bg-white border rounded-4 p-5 shadow-sm">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-3">
+                            About This Tool
+                        </h2>
+
+                        <p class="text-secondary mb-3">
+                            RAR Extractor is designed to help users easily open and manage compressed archive files online.
+                            The interface is simple, lightweight, and optimized for both beginners and advanced users.
+                        </p>
+
+                        <p class="text-secondary mb-0">
+                            Whether you need to access documents, images, videos, or backup archives,
+                            this tool provides a clean and modern experience directly from your browser.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 text-center">
+                        <i class="fa-solid fa-file-archive fa-8x text-primary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pb-5" id="faq">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Is this tool free?
+                        </button>
+                    </h2>
+
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, this RAR extractor tool is completely free to use.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Can I use it on mobile?
+                        </button>
+                    </h2>
+
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely. The website is fully responsive and mobile-friendly.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Are uploaded files secure?
+                        </button>
+                    </h2>
+
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Uploaded files are handled securely and privately.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-top py-4 mt-4">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="fw-bold mb-1">
+                        <i class="fa-solid fa-file-zipper text-primary me-2"></i>
+                        RAR Extractor
+                    </h5>
+
+                    <small class="text-secondary">
+                        Free online archive extraction tool with modern responsive design.
+                    </small>
+                </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary me-3">
+                        Terms
+                    </a>
+
+                    <a href="#" class="text-decoration-none text-secondary">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+        const extractBtn = document.getElementById('extractBtn');
+        const rarFile = document.getElementById('rarFile');
+        const statusBox = document.getElementById('statusBox');
+
+        extractBtn.addEventListener('click', function () {
+            if (rarFile.files.length > 0) {
+                statusBox.classList.remove('d-none');
+            } else {
+                alert('Please upload a RAR file first.');
+            }
+        });
+    </script>
+
+</body>
+</html>
