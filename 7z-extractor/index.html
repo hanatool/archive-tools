@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free online 7Z Extractor tool to unzip and extract 7z archives quickly and securely. Modern responsive Bootstrap interface with drag and drop support.">
-    <meta name="keywords" content="7z extractor, unzip 7z, extract 7z files, archive extractor, online extractor, bootstrap tool">
+    <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+        name='viewport' />
+    <meta name="description"
+        content="Free online 7Z Extractor tool to unzip and extract 7z archives quickly and securely. Modern responsive Bootstrap interface with drag and drop support.">
+    <meta name="keywords"
+        content="7z extractor, unzip 7z, extract 7z files, archive extractor, online extractor, bootstrap tool">
     <meta name="author" content="7Z Extractor">
     <meta name="robots" content="index, follow">
 
@@ -20,10 +24,11 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3767/3767084.png">
 
 </head>
+
 <body class="bg-light text-dark">
 
     <!-- HEADER -->
-    <header class="border-bottom bg-white shadow-none sticky-top">
+    <header class="border-bottom bg-white sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light container">
             <a class="navbar-brand fw-bold" href="#">
                 <i class="fa-solid fa-file-zipper text-primary me-2"></i>
@@ -104,7 +109,7 @@
 
                             <!-- DROP AREA -->
                             <div id="dropArea"
-                                 class="border border-2 border-secondary-subtle rounded-4 p-5 text-center bg-light">
+                                class="border border-2 border-secondary-subtle rounded-4 p-5 text-center bg-light">
 
                                 <i class="fa-solid fa-cloud-arrow-up fa-3x text-primary mb-3"></i>
 
@@ -116,10 +121,7 @@
                                     or click the button below to upload
                                 </p>
 
-                                <input type="file"
-                                       id="fileInput"
-                                       class="form-control mb-3"
-                                       accept=".7z">
+                                <input type="file" id="fileInput" class="form-control mb-3" accept=".7z">
 
                                 <button class="btn btn-primary px-4 py-2" id="extractBtn">
                                     <i class="fa-solid fa-file-export me-2"></i>
@@ -129,8 +131,7 @@
                             </div>
 
                             <!-- RESULT -->
-                            <div id="resultBox"
-                                 class="alert alert-success mt-4 d-none">
+                            <div id="resultBox" class="alert alert-success mt-4 d-none">
                                 <i class="fa-solid fa-circle-check me-2"></i>
                                 Archive uploaded successfully. Extraction process started.
                             </div>
@@ -279,7 +280,10 @@
 
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     <span class="fw-semibold">
-                        © 2026 7Z Extractor
+                        © <script type='text/javascript'>
+                            var creditsyear = new Date();
+                            document.write(creditsyear.getFullYear());
+                        </script> 7Z Extractor
                     </span>
                 </div>
 
@@ -309,7 +313,6 @@
 
     <!-- SCRIPT -->
     <script>
-
         const fileInput = document.getElementById('fileInput');
         const extractBtn = document.getElementById('extractBtn');
         const resultBox = document.getElementById('resultBox');
@@ -343,8 +346,8 @@
                 fileInput.files = e.dataTransfer.files;
             }
         });
-
     </script>
 
 </body>
+
 </html>

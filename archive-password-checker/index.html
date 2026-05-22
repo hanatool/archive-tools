@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Archive Password Checker - Secure ZIP & RAR Password Tool</title>
 
-    <meta name="description" content="Archive Password Checker helps you verify ZIP, RAR, and 7Z archive passwords quickly with a modern responsive Bootstrap interface." />
-    <meta name="keywords" content="archive password checker, zip password checker, rar password checker, 7z password tool, bootstrap tool" />
+    <meta name="description"
+        content="Archive Password Checker helps you verify ZIP, RAR, and 7Z archive passwords quickly with a modern responsive Bootstrap interface." />
+    <meta name="keywords"
+        content="archive password checker, zip password checker, rar password checker, 7z password tool, bootstrap tool" />
     <meta name="author" content="Archive Password Checker" />
     <meta name="robots" content="index, follow" />
 
@@ -93,7 +96,7 @@
                 </p>
 
                 <div class="bg-light border rounded-3 d-flex align-items-center justify-content-center"
-                     style="height: 120px;">
+                    style="height: 120px;">
                     <span class="text-secondary">
                         728 x 90 Banner Ad
                     </span>
@@ -129,12 +132,8 @@
                                         Upload Archive File
                                     </label>
 
-                                    <input
-                                        type="file"
-                                        class="form-control form-control-lg"
-                                        id="archiveFile"
-                                        accept=".zip,.rar,.7z"
-                                    >
+                                    <input type="file" class="form-control form-control-lg" id="archiveFile"
+                                        accept=".zip,.rar,.7z">
                                 </div>
 
                                 <div class="mb-4">
@@ -143,28 +142,17 @@
                                     </label>
 
                                     <div class="input-group input-group-lg">
-                                        <input
-                                            type="password"
-                                            class="form-control"
-                                            id="passwordInput"
-                                            placeholder="Enter archive password"
-                                        >
+                                        <input type="password" class="form-control" id="passwordInput"
+                                            placeholder="Enter archive password">
 
-                                        <button
-                                            class="btn btn-outline-secondary"
-                                            type="button"
-                                            id="togglePassword"
-                                        >
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
                                             <i class="fa-solid fa-eye"></i>
                                         </button>
                                     </div>
                                 </div>
 
                                 <div class="d-grid">
-                                    <button
-                                        type="submit"
-                                        class="btn btn-primary btn-lg"
-                                    >
+                                    <button type="submit" class="btn btn-primary btn-lg">
                                         <i class="fa-solid fa-shield-halved me-2"></i>
                                         Check Password
                                     </button>
@@ -173,11 +161,7 @@
                             </form>
 
                             <!-- RESULT -->
-                            <div
-                                id="resultBox"
-                                class="alert d-none mt-4"
-                                role="alert"
-                            ></div>
+                            <div id="resultBox" class="alert d-none mt-4" role="alert"></div>
 
                         </div>
                     </div>
@@ -205,7 +189,8 @@
                         </h4>
 
                         <p class="text-secondary mb-0">
-                            Lightweight Bootstrap interface designed for speed and smooth user experience on all devices.
+                            Lightweight Bootstrap interface designed for speed and smooth user experience on all
+                            devices.
                         </p>
                     </div>
                 </div>
@@ -256,7 +241,7 @@
                 </p>
 
                 <div class="bg-light border rounded-3 d-flex align-items-center justify-content-center"
-                     style="height: 250px;">
+                    style="height: 250px;">
                     <span class="text-secondary">
                         Responsive Advertisement Area
                     </span>
@@ -279,7 +264,10 @@
 
                 <div class="col-md-6 text-center text-md-end">
                     <span class="text-secondary">
-                        © 2026 All Rights Reserved
+                        © <script type='text/javascript'>
+                            var creditsyear = new Date();
+                            document.write(creditsyear.getFullYear());
+                        </script> All Rights Reserved
                     </span>
                 </div>
 
@@ -300,16 +288,16 @@
         togglePassword.addEventListener("click", function () {
 
             const type =
-                passwordInput.getAttribute("type") === "password"
-                ? "text"
-                : "password";
+                passwordInput.getAttribute("type") === "password" ?
+                "text" :
+                "password";
 
             passwordInput.setAttribute("type", type);
 
             this.innerHTML =
-                type === "password"
-                ? '<i class="fa-solid fa-eye"></i>'
-                : '<i class="fa-solid fa-eye-slash"></i>';
+                type === "password" ?
+                '<i class="fa-solid fa-eye"></i>' :
+                '<i class="fa-solid fa-eye-slash"></i>';
         });
 
         form.addEventListener("submit", function (e) {
@@ -349,4 +337,5 @@
     </script>
 
 </body>
+
 </html>

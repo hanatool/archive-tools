@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +17,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body class="bg-light text-dark">
 
     <!-- HEADER -->
-    <header class="border-bottom bg-white shadow-none sticky-top">
+    <header class="border-bottom bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-white">
                 <a class="navbar-brand fw-bold" href="#">
@@ -96,12 +98,7 @@
                             Select Files
                         </label>
 
-                        <input
-                            type="file"
-                            class="form-control form-control-lg"
-                            id="fileInput"
-                            multiple
-                        />
+                        <input type="file" class="form-control form-control-lg" id="fileInput" multiple />
                     </div>
 
                     <!-- FILE LIST -->
@@ -123,13 +120,8 @@
                             ZIP File Name
                         </label>
 
-                        <input
-                            type="text"
-                            class="form-control form-control-lg"
-                            id="zipName"
-                            placeholder="example.zip"
-                            value="archive.zip"
-                        />
+                        <input type="text" class="form-control form-control-lg" id="zipName" placeholder="example.zip"
+                            value="archive.zip" />
                     </div>
 
                     <!-- BUTTON -->
@@ -177,7 +169,8 @@
                     </p>
 
                     <p class="text-secondary mb-0">
-                        This tool works smoothly on desktop, tablet, and mobile devices with a clean and modern interface.
+                        This tool works smoothly on desktop, tablet, and mobile devices with a clean and modern
+                        interface.
                     </p>
 
                 </div>
@@ -205,7 +198,10 @@
             </div>
 
             <p class="text-secondary small mb-0">
-                © 2026 ZIP Creator. All rights reserved.
+                © <script type='text/javascript'>
+                    var creditsyear = new Date();
+                    document.write(creditsyear.getFullYear());
+                </script> ZIP Creator. All rights reserved.
             </p>
 
         </div>
@@ -285,4 +281,5 @@
     </script>
 
 </body>
+
 </html>
