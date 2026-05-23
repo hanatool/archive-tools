@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+  <channel>
+
+    <title>Hanapha Archive Tools</title>
+    <link>https://tools.hanapha.com/archive-tools</link>
+
+    <description>
+      Free online archive tools for extracting, compressing, creating, and managing ZIP, RAR, TAR, and 7Z files directly in your browser.
+    </description>
+
+    <language>en-us</language>
+
+    <item>
+      <title>7Z Extractor</title>
+      <link>https://tools.hanapha.com/archive-tools/7z-extractor</link>
+      <description>
+        Extract and open 7Z archive files online instantly.
+      </description>
+    </item>
+
+    <item>
+      <title>Archive Password Checker</title>
+      <link>https://tools.hanapha.com/archive-tools/archive-password-checker</link>
+      <description>
+        Check password protection status of archive files online.
+      </description>
+    </item>
+
+    <item>
+      <title>File Compressor</title>
+      <link>https://tools.hanapha.com/archive-tools/file-compressor</link>
+      <description>
+        Compress files quickly to reduce file size online.
+      </description>
+    </item>
+
+    <item>
+      <title>RAR Extractor</title>
+      <link>https://tools.hanapha.com/archive-tools/rar-extractor</link>
+      <description>
+        Extract and open RAR archive files directly in your browser.
+      </description>
+    </item>
+
+    <item>
+      <title>TAR Extractor</title>
+      <link>https://tools.hanapha.com/archive-tools/tar-extractor</link>
+      <description>
+        Extract TAR archive files online with ease.
+      </description>
+    </item>
+
+    <item>
+      <title>ZIP Creator</title>
+      <link>https://tools.hanapha.com/archive-tools/zip-creator</link>
+      <description>
+        Create ZIP archive files online instantly.
+      </description>
+    </item>
+
+    <item>
+      <title>ZIP Extractor</title>
+      <link>https://tools.hanapha.com/archive-tools/zip-extractor</link>
+      <description>
+        Extract ZIP archive files directly in your browser.
+      </description>
+    </item>
+
+  </channel>
+
+</rss>
